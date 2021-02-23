@@ -18,7 +18,6 @@ function App() {
   );
 }
 function Person(){
-
   return (
   <div style={{border:'2px solid yellow',margin:'10px'}}>
     <h1> Name:Hosneara Happy</h1> 
