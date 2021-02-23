@@ -2,26 +2,31 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  
+  const nayoks = ['Anwar', 'Jafor', 'Alomgir', 'Salman']
   return (
     <div className="App">
       <header className="App-header">
         <p>I am a React Person</p>
-        <Person></Person>
-        <Person></Person>
-        <Person></Person>
-        
+        <Person name={nayoks[0]} nayika="Moushumi"></Person>
+        <Person name="Jasim" nayika="Shabana"></Person>
+        <Person name="BappaRaj" nayika="Cheka"></Person>
+        <Person name="ELias K" nayika="Bobita"></Person>
         
         
       </header>
     </div>
   );
 }
-function Person(){
+function Person(props){
+  const personStyle={
+    border: '2px solid red',
+    margin: '10px'
+  }
+  console.log(props);
   return (
-  <div style={{border:'2px solid yellow',margin:'10px'}}>
-    <h1> Name:Hosneara Happy</h1> 
-    <h3> i am a mother of Ayesha Alia</h3>
+  <div style={personStyle}>
+    <h1> Nayok: {props.name}</h1> 
+    <h3> Hero of {props.nayika}</h3>
     </div>
   )
 }
