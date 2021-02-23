@@ -18,13 +18,9 @@ function App() {
   );
 }
 function Person(){
-  const PersonStyle={
-    border: '2px solid red', 
-    margin:'10px'
 
-  }
   return (
-  <div style={PersonStyle}>
+  <div style={{border:'2px solid yellow',margin:'10px'}}>
     <h1> Name:Hosneara Happy</h1> 
     <h3> i am a mother of Ayesha Alia</h3>
     </div>
