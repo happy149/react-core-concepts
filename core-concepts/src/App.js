@@ -13,7 +13,7 @@ function App() {
       <header className="App-header">
         <p>I am a React Person</p>
         <Product product={products[0]}></Product>
-        
+        <Product product={products[1]}></Product>
       </header>
     </div>
   );
@@ -29,10 +29,11 @@ function Product(props){
       width: '200px',
       float: 'left'
     }
+    const {name, price} = props.product;
     return (
       <div style={productStyle}>
-        <h2>{props.product.name}</h2>
-        <h5>{props.price}</h5>
+        <h2>{name}</h2>
+        <h5>{price}</h5>
         <button>Buy now</button>
       </div>
   )
